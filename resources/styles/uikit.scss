@@ -26,6 +26,8 @@ $button-primary-hover-background: darken($button-primary-background, 5%);
 $button-primary-color: white;
 $button-primary-active-background: darken($button-primary-background, 10%);
 $button-primary-active-color: white;
+$button-secondary-background: white;
+$button-secondary-color: $color-green;
 
 $global-font-family: 'Open Sans', sans-serif;
 $base-heading-font-family: 'Montserrat', sans-serif;
@@ -35,6 +37,10 @@ $base-heading-font-family: 'Montserrat', sans-serif;
 
 @mixin hook-base-link {
     transition: color 0.25s ease-in-out;
+}
+
+@mixin hook-button-secondary {
+    border: 1px solid;
 }
 
 @mixin hook-button {
