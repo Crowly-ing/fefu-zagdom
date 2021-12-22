@@ -1,2 +1,3 @@
 require('./bootstrap');
-import 'uikit'
+import 'uikit';
+import './swiper';

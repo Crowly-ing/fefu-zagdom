@@ -13,6 +13,7 @@
     &__icon {
         margin-right: 8px;
     }
+
 }
 
 .Button {
@@ -20,5 +21,9 @@
 
     &--primary {
         @extend .uk-button-primary;
+    }
+
+    &--secondary {
+        @extend .uk-button-secondary;
     }
 }
