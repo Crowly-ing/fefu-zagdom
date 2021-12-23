@@ -28,6 +28,7 @@ $button-primary-active-background: darken($button-primary-background, 10%);
 $button-primary-active-color: white;
 $button-secondary-background: white;
 $button-secondary-color: $color-green;
+$button-primary-hover-color: white;
 
 $offcanvas-bar-background: hsl(153, 98%, 32%);
 $global-inverse-color: white;
@@ -58,4 +59,4 @@ $base-heading-font-family: 'Montserrat', sans-serif;
 }
 
 // 4. Import UIkit.
-@import "~uikit/src/scss/uikit-theme.scss";
+@import "~uikit/src/scss/uikit.scss";
