@@ -3,6 +3,7 @@
     list-style: none;
 
     &__listItem {
+        @extend %SiteNav--column__listItem;
         &:not(:last-child) {
             margin-right: 24px;
         }
@@ -12,10 +13,26 @@
         line-height: 1.2;
         color: $color-gray;
 
+        &--white {
+            color: white;
+        }
+        
         &:hover,
         &:focus,
         &:active {
             color: $color-black;
+        }
+    }
+
+    &--column {
+        flex-flow: column;
+        %SiteNav--column__listItem {
+            :root & {
+                margin-right: unset;
+            }
+            &:not(:last-child) {
+                margin-bottom: 1.5em;
+            }
         }
     }
 }

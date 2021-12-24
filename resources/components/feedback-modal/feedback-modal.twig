@@ -1,0 +1,15 @@
+{% import _self as macros %}
+
+{% macro content() %}
+    <div id="feedback" data-uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <h2 class="uk-modal-title">Оставить заявку</h2>
+            <button type="button" class="uk-modal-close-default" data-uk-close></button>
+            <p class="uk-margin-top">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum condimentum pellentesque. Proin quis vulputate dolor. Aenean eget scelerisque tortor, et pretium est. Nullam dolor tellus, ultricies sed risus ut, viverra dapibus eros. In commodo neque diam, eget viverra diam blandit in. Nullam facilisis malesuada ex et venenatis. Morbi tortor mi, elementum sed enim eget, malesuada dignissim ligula. In molestie mi nec ante tristique vestibulum at vitae urna. Mauris volutpat semper dictum.
+            </p>
+        </div>
+    </div>
+{% endmacro %}
+
+{{ macros.content }}
