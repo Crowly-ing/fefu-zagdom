@@ -6,6 +6,39 @@
     &__main {
         flex: 1;
     }
+
+    &__section {
+        padding-y: 80px;
+
+        &--slider {
+            padding-y: 40px 60px;
+            @include vw-sm-down {
+                padding-y: 20px 40px;
+            }
+        }
+
+        &--projects {
+            background-color: $color-snow-drift;
+
+            @include vw-sm-down {
+                padding: 32px 16px;
+            }
+        }
+        
+    }
+}
+
+@mixin page-title-mixin {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: bold;
+    font-size: toRem(38px);
+    line-height: 120%;
+
+    margin-right: 8px;
+
+    @include vw-xs-down {
+        margin-bottom: 8px;
+    }
 }
 
 body {
@@ -15,4 +48,26 @@ body {
 
 .Container {
     @extend .uk-container;
+}
+
+.Page {
+    padding-y: 40px 80px;
+
+    @include vw-sm-down{
+        padding-top: 20px;
+    }
+
+    &__breadcrumbs {
+        padding-bottom: 48px;
+
+        @include vw-sm-down {
+            padding-bottom: 32px;
+        }
+    }
+
+    &__title {
+        @include page-title-mixin;
+
+        margin-bottom: 32px;
+    }
 }

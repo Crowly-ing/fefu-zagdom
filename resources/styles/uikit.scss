@@ -26,15 +26,26 @@ $button-primary-hover-background: darken($button-primary-background, 5%);
 $button-primary-color: white;
 $button-primary-active-background: darken($button-primary-background, 10%);
 $button-primary-active-color: white;
+$button-secondary-background: white;
+$button-secondary-color: $color-green;
+$button-primary-hover-color: white;
+
+$offcanvas-bar-background: hsl(153, 98%, 32%);
+$global-inverse-color: white;
+$inverse-global-color: $global-inverse-color;
 
 $global-font-family: 'Open Sans', sans-serif;
 $base-heading-font-family: 'Montserrat', sans-serif;
 
-@import "~uikit/src/scss/variables-theme.scss";
-@import "~uikit/src/scss/mixins-theme.scss";
+@import "~uikit/src/scss/variables.scss";
+@import "~uikit/src/scss/mixins.scss";
 
 @mixin hook-base-link {
     transition: color 0.25s ease-in-out;
+}
+
+@mixin hook-button-secondary {
+    border: 1px solid;
 }
 
 @mixin hook-button {
@@ -48,4 +59,4 @@ $base-heading-font-family: 'Montserrat', sans-serif;
 }
 
 // 4. Import UIkit.
-@import "~uikit/src/scss/uikit-theme.scss";
+@import "~uikit/src/scss/uikit.scss";
