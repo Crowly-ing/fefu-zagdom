@@ -9,6 +9,7 @@ $color-snow-drift: #F5F7F3;
 $font-weight-bold: 700;
 $font-weight-medium: 500;
 $font-weight-regular: 400;
+$color-gray--dusty: #254741;
 
 @function toRem($size) {
     @return $size / 16px * 1rem;
@@ -28,3 +29,8 @@ $font-weight-regular: 400;
 @import "../components/news-list/news-list.scss";
 @import "../components/contacts/contacts.scss";
 @import "../components/footer/footer.scss";
+@import "./mixins.scss";
+@import "../components/breadcrumbs/breadcrumbs.scss";
+@import "../components/news-card/news-card.scss";
+@import "../components/pagination/pagination.scss";
+@import "./news.scss";
